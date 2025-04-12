@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosquito killer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-detail-container">
+        <h2>Mosquito killer</h2>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.owISDlK6-fQRZ0oy53OOrwHaIN&pid=Api&P=0&h=220" alt="">
+        <p>Good Quality product</p>
+        <p>Price: 599 Rs</p>
+        <button>Add to Cart</button>
+        <a href="index.html"><button>Back to Home</button></a>
+    </div>
+
+    <script>
+        function openProduct(image, title, description, price) {
+            let product = {
+                image: image,
+                title: title,
+                description: description,
+                price: price
+            };
+            localStorage.setItem("product", JSON.stringify(product)); 
+            window.location.href = "index.html";  
+        }
+        </script>
+</body>
+</html>
